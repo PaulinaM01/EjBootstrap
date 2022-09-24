@@ -60,6 +60,14 @@ header nav ul a:hover {
     background-color: #D3CEDF;
 }
 
+/*DISEÑO PARA LOS TITULOS*/
+.cuerpo_servicios .titulosH1, .titulosH2 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+    margin: 2%;
+    text-align: center;
+}
+
 /*DISEÑO PARA LA FLECHA DEL CARRUSEL*/
 .carousel-control-next-icon, .carousel-control-prev-icon {
     background-color: black;
