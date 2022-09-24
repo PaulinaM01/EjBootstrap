@@ -530,6 +530,146 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Hero Contact Section
+--------------------------------------------------------------*/
+#heroContact {
+  width: 100%;
+  height: 80vh;
+  background: #37517e;
+}
+
+#heroContact .container {
+  padding-top: 80px;
+}
+
+#heroContact h1 {
+  margin: 0 0 100px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#heroContact h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#heroContact .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+#heroContact .btn-get-started:hover {
+  background: #209dd8;
+}
+
+#heroContact.btn-watch-video {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #fff;
+  line-height: 1;
+}
+
+#heroContact .btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+#heroContact .btn-watch-video:hover i {
+  color: #47b2e4;
+}
+
+#heroContact .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  #heroContact {
+    height: 100vh;
+    text-align: center;
+  }
+
+  #heroContact .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #heroContact .hero-img {
+    text-align: center;
+  }
+
+  #heroContact .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #heroContact h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #heroContact h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #heroContact .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #heroContact .hero-img img {
+    width: 80%;
+  }
+
+  #heroContact .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
