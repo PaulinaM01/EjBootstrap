@@ -11,12 +11,12 @@ body {
     
   }
   
-  a {
+  a{
     color: #47b2e4;
     text-decoration: none;
   }
   
-  a:hover {
+  a:hover{
     color: #73c5eb;
     text-decoration: none;
   }
@@ -83,3 +83,4 @@ body {
     margin: auto;
     display: block;
 }
+
