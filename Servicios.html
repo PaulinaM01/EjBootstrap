@@ -82,12 +82,33 @@
     <!-- 1 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/eliminar_verrugas.jpg" class="card-img-top" alt="Servicio eliminar_verrugas (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
+        <article>
+          <img src="imagenes/Servicios/eliminar_verrugas.jpg" class="card-img-top" alt="Servicio eliminar_verrugas (Adara Nails & Spa)">
           <h5 class="titulo_cuadro">Cauterizacion de verrugas</h5>
           <p class="tiempo_costo_cuadro">30 minutos · A partir de $200</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+          <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+        </article>
+          <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+              <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+              <h3>Agenda tu cita</h3>
+              <form action="">
+                <div class="contenedor-inputs">
+                  <label for="name">Servicio a realizar <span>*</span></label>
+                  <input name="Service" type="text" placeholder="Gelish">
+                  <label for="name">Nombre Completo <span>*</span></label>
+						      <input name="name" type="text" placeholder="Victoria Garcia">
+						      <label for="name">Correo eléctronico <span>*</span></label>
+						      <input name="email" type="email" placeholder="VicGarcia@gmail.com">
+						      <label for="name">Número teléfonico <span>*</span></label>
+                  <input name="Phone" type="tel" placeholder="8154421022">
+						      <label for="name">Fecha y hora de la cita <span>*</span></label>
+                  <input name="Date" type="datetime-local" min="T10:30" max="18:00">
+                </div>
+                <input type="submit" class="btn-submit" value="Agendar">
+              </form>
+            </div>
+          </div>
       </div>    
     
       <!-- 2 -->
@@ -541,7 +562,7 @@
   
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
+    <script src="js/popup.js" ></script>
     <!-- Vendor JS Files -->
       <!-- <script src="assets/spa/aos/aos.js"></script>-->
     <script src="assets/spa/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -553,6 +574,5 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-      
   </body>
 </html>
