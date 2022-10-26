@@ -14,6 +14,7 @@
     <link href="assets/spa/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/spa/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/spa/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <!--<link href="assets/spa/remixicon/remixicon.css" rel="stylesheet">-->
     <link href="assets/spa/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -113,64 +114,116 @@
     
       <!-- 2 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/levantamiento_parpado.jpg" class="card-img-top" alt="Servicio levantamiento_parpado(Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
+        <article>
+          <img src="imagenes/Servicios/levantamiento_parpado.jpg" class="card-img-top" alt="Servicio levantamiento_parpado(Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
           <h5 class="titulo_cuadro">Levantamiento de parpado</h5>
           <p class="tiempo_costo_cuadro">45 minutos · $900</p>
           <p class="texto_cuadro">Procedimiento realizado con plasma pen.</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
+          <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Agenda tu cita</h3>
+            <form action="">
+              <div class="contenedor-inputs">
+                <label for="name">Servicio a realizar <span>*</span></label>
+                <input name="Service" type="text" placeholder="Gelish">
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" type="text" placeholder="Victoria Garcia">
+                <label for="name">Correo eléctronico <span>*</span></label>
+                <input name="email" type="email" placeholder="VicGarcia@gmail.com">
+                <label for="name">Número teléfonico <span>*</span></label>
+                <input name="Phone" type="tel" placeholder="8154421022">
+                <label for="name">Fecha y hora de la cita <span>*</span></label>
+                <input name="Date" type="datetime-local" min="T10:30" max="18:00">
+              </div>
+              <input type="submit" class="btn-submit" value="Agendar">
+            </form>
+          </div>
         </div>
       </div>
     
       <!-- 3 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/radio_frecuencia.jpg" class="card-img-top" alt="Servicio Radio_frecuencia (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
+        <article>
+          <img src="imagenes/Servicios/radio_frecuencia.jpg" class="card-img-top" alt="Servicio Radio_frecuencia (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
           <h5 class="titulo_cuadro">Radiofrecuencia facial</h5>
           <p class="tiempo_costo_cuadro">30 minutos · $150</p>
           <p class="texto_cuadro">Incluye capsula de colageno</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
+          <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
+        <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Agenda tu cita</h3>
+            <form action="">
+              <div class="contenedor-inputs">
+                <label for="name">Servicio a realizar <span>*</span></label>
+                <input name="Service" type="text" placeholder="Gelish">
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" type="text" placeholder="Victoria Garcia">
+                <label for="name">Correo eléctronico <span>*</span></label>
+                <input name="email" type="email" placeholder="VicGarcia@gmail.com">
+                <label for="name">Número teléfonico <span>*</span></label>
+                <input name="Phone" type="tel" placeholder="8154421022">
+                <label for="name">Fecha y hora de la cita <span>*</span></label>
+                <input name="Date" type="datetime-local" min="T10:30" max="18:00">
+              </div>
+              <input type="submit" class="btn-submit" value="Agendar">
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
+    
     <!-- 4 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/retoque_microblading.jpg" class="card-img-top" alt="Servicio retoque_microblading (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Retoque Microblading</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · $1,000</p>
-          <p class="texto_cuadro">Este costo es bajo dos condiciones:
-            <ol>
-              <li value="1">Que el trabajo sea realizado por nosotras</li>
-              <li>Que no pasen mas de dos meses</li>
-            </ol>
-          </p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/retoque_microblading.jpg" class="card-img-top" alt="Servicio retoque_microblading (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Retoque Microblading</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · $1,000</p>
+            <p class="texto_cuadro">Este costo es bajo dos condiciones:
+              <ol>
+                <li value="1">Que el trabajo sea realizado por nosotras</li>
+                <li>Que no pasen mas de dos meses</li>
+              </ol>
+            </p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 5 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/ceja_hibrida.jpg" class="card-img-top" alt="Servicio ceja_hibrida (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Ceja Hibrida (Fusion de tecnicas)</h5>
-          <p class="tiempo_costo_cuadro">1 hora 30 minutos · $2,500</p>
-          <p class="texto_cuadro">Microblading + Shading</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/ceja_hibrida.jpg" class="card-img-top" alt="Servicio ceja_hibrida (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Ceja Hibrida (Fusion de tecnicas)</h5>
+            <p class="tiempo_costo_cuadro">1 hora 30 minutos · $2,500</p>
+            <p class="texto_cuadro">Microblading + Shading</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
       <!-- 6 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/ceja_polvo.jpg" class="card-img-top" alt="Servicio ceja_polvo (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Cejas Efecto Polvo</h5>
-          <p class="tiempo_costo_cuadro">1 hora 15 minutos · $1,800</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/ceja_polvo.jpg" class="card-img-top" alt="Servicio ceja_polvo (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Cejas Efecto Polvo</h5>
+            <p class="tiempo_costo_cuadro">1 hora 15 minutos · $1,800</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -178,35 +231,41 @@
     <!-- 7 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/cejas_laminadas.jpg" class="card-img-top" alt="Servicio cejas_laminadas (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Ceja HD + Laminado</h5>
-          <p class="tiempo_costo_cuadro">1 hora 30 minutos · $420</p>
-          <p class="texto_cuadro">Incluye depilacion</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/cejas_laminadas.jpg" class="card-img-top" alt="Servicio cejas_laminadas (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Ceja HD + Laminado</h5>
+            <p class="tiempo_costo_cuadro">1 hora 30 minutos · $420</p>
+            <p class="texto_cuadro">Incluye depilacion</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 8 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/ceja_hibrida.jpg" class="card-img-top" alt="Servicio ceja_hibrida (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Ceja Hibrida (Fusion de tecnicas)</h5>
-          <p class="tiempo_costo_cuadro">1 hora 30 minutos · $2,500</p>
-          <p class="texto_cuadro">Microblading + Shading</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/ceja_hibrida.jpg" class="card-img-top" alt="Servicio ceja_hibrida (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Ceja Hibrida (Fusion de tecnicas)</h5>
+            <p class="tiempo_costo_cuadro">1 hora 30 minutos · $2,500</p>
+            <p class="texto_cuadro">Microblading + Shading</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
       <!-- 9 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/ceja_hd.jpg" class="card-img-top" alt="Servicio ceja_hd (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Cejas HD</h5>
-          <p class="tiempo_costo_cuadro">45 minutos · $300</p>
-          <p class="texto_cuadro">Incluye depilación</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/ceja_hd.jpg" class="card-img-top" alt="Servicio ceja_hd (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Cejas HD</h5>
+            <p class="tiempo_costo_cuadro">45 minutos · $300</p>
+            <p class="texto_cuadro">Incluye depilación</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -215,35 +274,41 @@
     <!-- 10 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/depilacion_con_miel.png" class="card-img-top" alt="Servicio depilacion_con_miel (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Laminado de ceja + depilacion con miel</h5>
-          <p class="tiempo_costo_cuadro">1 hora 15 minutos · $230</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/depilacion_con_miel.png" class="card-img-top" alt="Servicio depilacion_con_miel (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Laminado de ceja + depilacion con miel</h5>
+            <p class="tiempo_costo_cuadro">1 hora 15 minutos · $230</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>    
     
       <!-- 11 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/levantamiento_parpado.jpg" class="card-img-top" alt="Servicio levantamiento_parpado (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Laminado de ceja</h5>
-          <p class="tiempo_costo_cuadro">1 hora · $150</p>
-          <p class="texto_cuadro">No incluye depilación</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/levantamiento_parpado.jpg" class="card-img-top" alt="Servicio levantamiento_parpado (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Laminado de ceja</h5>
+            <p class="tiempo_costo_cuadro">1 hora · $150</p>
+            <p class="texto_cuadro">No incluye depilación</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 12 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/lash_lifting_lash_tint.jpeg" class="card-img-top" alt="Servicio lash_lifting & lash_tint (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Lash Lifting + Lash Tint</h5>
-          <p class="tiempo_costo_cuadro">1 hora 15 minutos · $250</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/lash_lifting_lash_tint.jpeg" class="card-img-top" alt="Servicio lash_lifting & lash_tint (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Lash Lifting + Lash Tint</h5>
+            <p class="tiempo_costo_cuadro">1 hora 15 minutos · $250</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -251,35 +316,41 @@
     <!-- 13 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/lash_lifting.webp" class="card-img-top" alt="Servicio lash_lifting (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Lash Lifting</h5>
-          <p class="tiempo_costo_cuadro">1 hora · $200</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/lash_lifting.webp" class="card-img-top" alt="Servicio lash_lifting (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Lash Lifting</h5>
+            <p class="tiempo_costo_cuadro">1 hora · $200</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>    
     
       <!-- 14 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/pestañas1x1_volumen.jpg" class="card-img-top" alt="Servicio pestañas1x1_volumen (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Pestañas 1x1 Mink "Volumen"</h5>
-          <p class="tiempo_costo_cuadro">1 hora 30 minutos · $690</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/pestañas1x1_volumen.jpg" class="card-img-top" alt="Servicio pestañas1x1_volumen (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Pestañas 1x1 Mink "Volumen"</h5>
+            <p class="tiempo_costo_cuadro">1 hora 30 minutos · $690</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>          
+        </article>
       </div>
     
       <!-- 15 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/pestañas1x1_natural.jpg" class="card-img-top" alt="Servicio pestañas1x1_natural (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Pestañas 1x1 "Look natural"</h5>
-          <p class="tiempo_costo_cuadro">1 hora · $490</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/pestañas1x1_natural.jpg" class="card-img-top" alt="Servicio pestañas1x1_natural (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Pestañas 1x1 "Look natural"</h5>
+            <p class="tiempo_costo_cuadro">1 hora · $490</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -288,70 +359,80 @@
     <!-- 16 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/pestañas1x1_gato.jpg" class="card-img-top" alt="Servicio pestañas1x1_gato (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Pestañas Mink 1x1 "Ojo de gato"</h5>
-          <p class="tiempo_costo_cuadro">1 hora 15 minutos · $590</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/pestañas1x1_gato.jpg" class="card-img-top" alt="Servicio pestañas1x1_gato (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Pestañas Mink 1x1 "Ojo de gato"</h5>
+            <p class="tiempo_costo_cuadro">1 hora 15 minutos · $590</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>    
     
       <!-- 17 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/pestañas3x3_volumen.jpg" class="card-img-top" alt="Servicio pestañas3x3_volumen (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Pestañas 3x3 "Volumen"</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · $220</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/pestañas3x3_volumen.jpg" class="card-img-top" alt="Servicio pestañas3x3_volumen (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Pestañas 3x3 "Volumen"</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · $220</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 18 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/trenzas.jpg" class="card-img-top" alt="Servicio trenzas (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Trenzas"</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · Desde $50</p>
-          <p class="texto_cuadro">...</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/trenzas.jpg" class="card-img-top" alt="Servicio trenzas (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Trenzas"</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · Desde $50</p>
+            <p class="texto_cuadro">...</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
-
     </div>    
 
 
     <!-- 19-->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/maquillaje.jpg" class="card-img-top" alt="Servicio maquillaje (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Maquillaje"</h5>
-          <p class="tiempo_costo_cuadro">45 minutos · $250</p>
-          <p class="texto_cuadro">Incluye pestañas de tira</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/maquillaje.jpg" class="card-img-top" alt="Servicio maquillaje (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Maquillaje"</h5>
+            <p class="tiempo_costo_cuadro">45 minutos · $250</p>
+            <p class="texto_cuadro">Incluye pestañas de tira</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>    
     
       <!-- 20 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/microblading.webp" class="card-img-top" alt="Servicio microblading (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Microblading"</h5>
-          <p class="tiempo_costo_cuadro">1 hora 30 minutos · $2,200</p>
-          <p class="texto_cuadro">Técnica de pelo a pelo, es el trazo de vello en tu ceja para dar un aspecto natural. (ideal para rellenar huecos en la ceja, dar simetría y apariencia abundante de vello).</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/microblading.webp" class="card-img-top" alt="Servicio microblading (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Microblading"</h5>
+            <p class="tiempo_costo_cuadro">1 hora 30 minutos · $2,200</p>
+            <p class="texto_cuadro">Técnica de pelo a pelo, es el trazo de vello en tu ceja para dar un aspecto natural. (ideal para rellenar huecos en la ceja, dar simetría y apariencia abundante de vello).</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
       <!-- 21 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/facial_spa.jpg" class="card-img-top" alt="Servicio facial_spa (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Facial Spa"</h5>
-          <p class="tiempo_costo_cuadro">1 hora · $300</p>
-          <p class="texto_cuadro">Incluye:
+        <article>
+          <img src="imagenes/Servicios/facial_spa.jpg" class="card-img-top" alt="Servicio facial_spa (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Facial Spa"</h5>
+            <p class="tiempo_costo_cuadro">1 hora · $300</p>
+            <p class="texto_cuadro">Incluye:
             <ol>
               <li value="1">Shampoo facial</li>
               <li>Exfoliación</li>
@@ -363,9 +444,10 @@
               <li>Hidratacion</li>
               <li>Masaje facial y craneal</li>
             </ol>
-          </p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+            </p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
 
     </div>  
@@ -374,115 +456,130 @@
     <!-- 22 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/cavitacion.png" class="card-img-top" alt="Servicio cavitacion (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Cavitación con control de peso"</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · $250</p>
-          <p class="texto_cuadro">Incluye:
+        <article>
+          <img src="imagenes/Servicios/cavitacion.png" class="card-img-top" alt="Servicio cavitacion (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Cavitación con control de peso"</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · $250</p>
+            <p class="texto_cuadro">Incluye:
             <ul>
               <li type="disc">Dieta</li>
               <li type="disc">Monitoreo de peso </li>
               <li type="disc">Medidas</li>
             </ul>
-          </p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+            </p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>    
     
       <!-- 23 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/depilacion_con_cera.jpg" class="card-img-top" alt="Servicio depilacion_con_cera (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Depilación de ceja"</h5>
-          <p class="tiempo_costo_cuadro">20 minutos · $70</p>
-          <p class="texto_cuadro">Retiro de vello y diseño de ceja.</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/depilacion_con_cera.jpg" class="card-img-top" alt="Servicio depilacion_con_cera (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Depilación de ceja"</h5>
+            <p class="tiempo_costo_cuadro">20 minutos · $70</p>
+            <p class="texto_cuadro">Retiro de vello y diseño de ceja.</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 24 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/pestañas3x3_volumen.jpg" class="card-img-top" alt="Servicio pestañas3x3 (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Pestañas 3x3</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · $180</p>
-          <p class="texto_cuadro">Aplicación de pestañas.</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/pestañas3x3_volumen.jpg" class="card-img-top" alt="Servicio pestañas3x3 (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Pestañas 3x3</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · $180</p>
+            <p class="texto_cuadro">Aplicación de pestañas.</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
-
     </div>   
-
-
     <!-- 25 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/depilacion_bozo.jpg" class="card-img-top" alt="Servicio depilacion_bozo (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Depilación de bozo</h5>
-          <p class="tiempo_costo_cuadro">20 minutos · $50</p>
-          <p class="texto_cuadro">Retiro de vello en área de bigote.</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/depilacion_bozo.jpg" class="card-img-top" alt="Servicio depilacion_bozo (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Depilación de bozo</h5>
+            <p class="tiempo_costo_cuadro">20 minutos · $50</p>
+            <p class="texto_cuadro">Retiro de vello en área de bigote.</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>    
     
       <!-- 26 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/depilacion_axila.webp" class="card-img-top" alt="Servicio depilacion_axila (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Depilación de axila</h5>
-          <p class="tiempo_costo_cuadro">15 minutos · $80</p>
-          <p class="texto_cuadro">Retiro de vello</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/depilacion_axila.webp" class="card-img-top" alt="Servicio depilacion_axila (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Depilación de axila</h5>
+            <p class="tiempo_costo_cuadro">15 minutos · $80</p>
+            <p class="texto_cuadro">Retiro de vello</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 27 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/retiro_uñas_acrilicas.jpg" class="card-img-top" alt="Servicio retiro_uñas_acrilicas (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Retiro de uñas acrilicas</h5>
-          <p class="tiempo_costo_cuadro">40 minutos · $120</p>
-          <p class="texto_cuadro">Retiro de acrílico.</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/retiro_uñas_acrilicas.jpg" class="card-img-top" alt="Servicio retiro_uñas_acrilicas (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Retiro de uñas acrilicas</h5>
+            <p class="tiempo_costo_cuadro">40 minutos · $120</p>
+            <p class="texto_cuadro">Retiro de acrílico.</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
-
     </div>    
 
 
     <!-- 28 -->
     <div class="todo_el_contenedor">
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/secado.jpg" class="card-img-top" alt="Servicio secado(Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Secado</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · $100</p>
-          <p class="texto_cuadro">Cualquier largo</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
-      </div>    
+        <article>
+          <img src="imagenes/Servicios/secado.jpg" class="card-img-top" alt="Servicio secado(Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Secado</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · $100</p>
+            <p class="texto_cuadro">Cualquier largo</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
+      </div>  
     
       <!-- 29 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/uñas_decoradas.jpg" class="card-img-top" alt="Servicio uñas_decoradas(Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Aplicación de uñas decoradas</h5>
-          <p class="tiempo_costo_cuadro">2 horas · $300</p>
-          <p class="texto_cuadro">Uñas acrílicas + gel y decoración sencilla (sellos y glitter)</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/uñas_decoradas.jpg" class="card-img-top" alt="Servicio uñas_decoradas(Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Aplicación de uñas decoradas</h5>
+            <p class="tiempo_costo_cuadro">2 horas · $300</p>
+            <p class="texto_cuadro">Uñas acrílicas + gel y decoración sencilla (sellos y glitter)</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
       </div>
     
       <!-- 30 -->
       <div class="cuadro" style="width: 18rem;">
-        <img src="imagenes/Servicios/esmaltado_gel.jpg" class="card-img-top" alt="Servicio esmaltado_gel (Adara Nails & Spa)">
-        <div class="cuerpo_cuadro">
-          <h5 class="titulo_cuadro">Esmaltado en gel</h5>
-          <p class="tiempo_costo_cuadro">30 minutos · $90</p>
-          <p class="texto_cuadro">Un solo tono</p>
-          <a href="#" class="btn btn-primary">Agendar</a>
-        </div>
+        <article>
+          <img src="imagenes/Servicios/esmaltado_gel.jpg" class="card-img-top" alt="Servicio esmaltado_gel (Adara Nails & Spa)">
+          <div class="cuerpo_cuadro">
+            <h5 class="titulo_cuadro">Esmaltado en gel</h5>
+            <p class="tiempo_costo_cuadro">30 minutos · $90</p>
+            <p class="texto_cuadro">Un solo tono</p>
+            <button class="btn-abrir-popup" id="btn-abrir-popup">Agendar</button>
+          </div>
+        </article>
+        
       </div>
 
     </div>

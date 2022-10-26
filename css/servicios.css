@@ -92,7 +92,7 @@ body {
 	line-height: 40px;
 	border: none;
 	color: #fff;
-	background: #5E7DE3;
+	background: #d162db;
 	border-radius: 3px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -102,7 +102,7 @@ body {
 }
 
 .cuadro article .btn-abrir-popup:hover {
-	background: rgba(94,125,227, .9);
+	background: #aa38b4;
 }
 
 /* ------------------------- */
